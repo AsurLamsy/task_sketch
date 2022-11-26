@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By html5css.ru - No Copyright -->
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <link rel="import" href="/html/ultra_flex.html">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+        .container-fluid {
+            background-color: rgb(149, 175, 56);
+            background-image: url('static\img\def_back.png');
+        }
+
+        .choice-detail {
+            display: block;
+            list-style: none;
+
+        }
+
+        .radio {
+            visibility: hidden;
+        }
+
+        .add-detail {
+            width: 0;
+            height: 0;
+            border-left: 30px solid rgb(68, 30, 30);
+            border-right: 30px solid rgb(190, 149, 149);
+        }
+
+        input[name="input"] {
+            width: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main class="bg-gradient" style="padding-top: 70px; height: 100vh;">
+        <!-- Общий контейнер -->
+        <article class="row">
+            <!-- Контейнер ввода -->
+            <section class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <!-- Контейнер база -->
+                <section class="justify-content-md-center"
+                    style="background-color: rgb(199, 240, 199); min-height: 80vh;">
+                    <!-- Форма контенера-базы -->
+                    <form action="#">
+                        <fieldset>
+                            <ul>
+                                <li class="choice-detail"><input type="text" name="input" placeholder="Деталь такая-то"
+                                        onChange="alert('СОСЕД')"><input type="checkbox" name="detail">
+                                </li>
+                                <li class="choice-detail"><input type="text" name="input"
+                                        placeholder="Деталь такая-то"><input type="checkbox" name="detail">
+                                </li>
+                                <li class="choice-detail"><input type="text" name="input"
+                                        placeholder="Деталь такая-то"><input type="checkbox" name="detail">
+                                </li>
+                                <li class="choice-detail"><input type="text" name="input"
+                                        placeholder="Деталь такая-то"><input type="checkbox" name="detail">
+                                </li>
+                                <li class="choice-detail"><input type="text" name="input"
+                                        placeholder="Деталь такая-то"><input type="checkbox" name="detail">
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </section>
+                <!-- Контейнер дополнительных -->
+                <div class="col-md-auto" style="background-color: rgb(223, 223, 139); min-height: 80vh;">
+                    <div class="add-detail">ere</div>
+                </div>
+            </section>
+            <!-- Общий контейнер с картинкой -->
+            <article>
+                <!-- Малый контейнер с цифрами -->
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"
+                    style="overflow: hidden; background-color: rgb(218, 161, 218); max-height: 100%;">
+                    <img src='/static/img/def_back.png' alt="12121212" style="max-height: 50%; width: auto;">
+                </div>
+                <!-- Контейнер с картиной -->
+                <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"
+                    style="overflow: hidden; background-color: rgb(218, 161, 218); max-height: 100%;">
+                    <img src='/static/img/def_back.png' alt="12121212" style="max-height: 50%; width: auto;">
+                </div>
+            </article>
+        </article>
+
+    </main>
+
+
+</body>
+
+</html>
