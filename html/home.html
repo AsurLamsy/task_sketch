@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="/css/my_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/js/my-js.js"></script>
+    <!-- <script src="/js/my-js.js"></script> -->
 </head>
+
 
 <body>
 
@@ -53,13 +54,16 @@
                         <!-- Оболочка раскрывающейся кнопки -->
                         <div class="fixed-bottom form-floating d-flex justify-content-center"
                             style="width: 50px; height: 100px;">
-                            <select class="fixed-bottom"
-                                style="position: absolute; bottom: 20px; margin-left: 50px; width: 120px;"
-                                name="typeofitem" size="1" id="">
-                                <option value=”GR”>Green</option>
-                                <option value=”YE”>Yellow</option>
-                                <option value=”BL”>Black</option>
-                            </select>
+                            <div class="select">
+                                <input type="hidden" name="item" value="1">
+                                <div class="selected">Arabian</div>
+                                <div class="option-list">
+                                    <div class="option" data-select-val="0">All cuisines</div>
+                                    <div class="option" data-select-val="1">Arabian</div>
+                                    <div class="option" data-select-val="2">Asian</div>
+                                    <div class="option" data-select-val="3">Bagels</div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -71,11 +75,10 @@
                             пункты</button>
                         <form action="#">
                             <fieldset>
-                                <ul>
-                                    <li id='org_div1' class="choice-detail"><input type="text" name="input"
+                                <ul id="listNew">
+                                    <!-- <li id='org_div1' class="choice-detail"><input type="text" name="input"
                                             placeholder="Деталь такая-то"><input type="checkbox" name="detail">
-                                    </li>
-
+                                    </li> -->
                                 </ul>
                             </fieldset>
                         </form>
@@ -89,7 +92,9 @@
                 <!-- Малый контейнер с цифрами -->
                 <div class="no-padding col-lg-1 col-md-1 col-sm-1 col-xs-1"
                     style="overflow: hidden; background-color: rgb(60, 74, 75); min-height: 100vh;">
+                    <ul id="numbers">
 
+                    </ul>
                 </div>
                 <!-- Контейнер с картиной -->
                 <div class="no-padding col-lg-11 col-md-11 col-sm-11 col-xs-11"
@@ -101,7 +106,7 @@
 
     </main>
 
-
+    <script src="/js/my-js.js"></script>
 </body>
 
 </html>
