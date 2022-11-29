@@ -10,31 +10,30 @@
     <link rel="stylesheet" href="/css/my_style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="/js/my-js.js"></script>
 </head>
 
 <body>
 
     <main class="bg-gradient">
         <!-- Контейнер на весь экран -->
-        <article class="container-fluid" style="padding-top: 20px;">
+        <article class="no-padding container-fluid">
 
             <!-- КРАСНЫЙ общий контейнер ввода -->
-            <section class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <section class="no-padding col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
                 <!-- Внутренняя оболочка Общего контейнера ввода -->
-                <section class="row" style="min-height: 100vh;">
+                <section class="no-padding row" style="min-height: 100vh;">
 
                     <!-- СИНИЙ контейнер ввода постоянных данных -->
-                    <section class="col-lg-6 col-md-6 col-sm-6 col-xs-6 justify-content-md-center"
+                    <section class="no-padding col-lg-6 col-md-6 col-sm-6 col-xs-6 justify-content-center"
                         style="background-color: rgb(26, 27, 26); min-height: 100vh;">
                         <!-- Форма контенера-базы -->
                         <form action="#">
                             <fieldset>
                                 <ul>
                                     <li class="choice-detail"><input type="text" name="input"
-                                            placeholder="Деталь такая-то" onChange="alert('СОСЕД')"><input
-                                            type="checkbox" name="detail">
+                                            placeholder="Деталь такая-то"><input type="checkbox" name="detail">
                                     </li>
                                     <li class="choice-detail"><input type="text" name="input"
                                             placeholder="Деталь такая-то"><input type="checkbox" name="detail">
@@ -51,30 +50,32 @@
                                 </ul>
                             </fieldset>
                         </form>
+                        <!-- Оболочка раскрывающейся кнопки -->
+                        <div class="fixed-bottom form-floating d-flex justify-content-center"
+                            style="width: 50px; height: 100px;">
+                            <select class="fixed-bottom"
+                                style="position: absolute; bottom: 20px; margin-left: 50px; width: 120px;"
+                                name="typeofitem" size="1" id="">
+                                <option value=”GR”>Green</option>
+                                <option value=”YE”>Yellow</option>
+                                <option value=”BL”>Black</option>
+                            </select>
+                        </div>
                     </section>
 
                     <!-- Контейнер дополнительных -->
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 justify-content-md-center"
+                    <div class="no-padding choice col-lg-6 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-center"
                         style="background-color: rgb(223, 223, 139); min-height: 100vh;">
+                        <button type="button" id="btn-add"
+                            class="btn btn-outline-primary d-flex justify-content-center align-self-center">Добавить
+                            пункты</button>
                         <form action="#">
                             <fieldset>
                                 <ul>
-                                    <li class="choice-detail"><input type="text" name="input"
-                                            placeholder="Деталь такая-то" onChange="alert('СОСЕД')"><input
-                                            type="checkbox" name="detail">
-                                    </li>
-                                    <li class="choice-detail"><input type="text" name="input"
+                                    <li id='org_div1' class="choice-detail"><input type="text" name="input"
                                             placeholder="Деталь такая-то"><input type="checkbox" name="detail">
                                     </li>
-                                    <li class="choice-detail"><input type="text" name="input"
-                                            placeholder="Деталь такая-то"><input type="checkbox" name="detail">
-                                    </li>
-                                    <li class="choice-detail"><input type="text" name="input"
-                                            placeholder="Деталь такая-то"><input type="checkbox" name="detail">
-                                    </li>
-                                    <li class="choice-detail"><input type="text" name="input"
-                                            placeholder="Деталь такая-то"><input type="checkbox" name="detail">
-                                    </li>
+
                                 </ul>
                             </fieldset>
                         </form>
@@ -84,14 +85,14 @@
                 </section>
             </section>
             <!-- Общий контейнер с картинкой -->
-            <article class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+            <article class="no-padding col-lg-8 col-md-8 col-sm-8 col-xs-8">
                 <!-- Малый контейнер с цифрами -->
-                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"
+                <div class="no-padding col-lg-1 col-md-1 col-sm-1 col-xs-1"
                     style="overflow: hidden; background-color: rgb(60, 74, 75); min-height: 100vh;">
 
                 </div>
                 <!-- Контейнер с картиной -->
-                <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11"
+                <div class="no-padding col-lg-11 col-md-11 col-sm-11 col-xs-11"
                     style="overflow: hidden; background-color: rgb(143, 101, 143); min-height: 100vh;">
                     <img src='/static/img/def_back.png' alt="12121212" style="width: 100%;">
                 </div>
